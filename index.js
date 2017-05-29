@@ -176,10 +176,10 @@ class Moip {
         return OAuth.factory(this);
     }
     createCreditCard(creditCard, customerId) {
-        return this.request(RequestMethod.post, `customers/${customerId}/fundinginstruments`, creditCard);
+        return this.request(RequestMethod.post, `/customers/${customerId}/fundinginstruments`, creditCard);
     }
     deleteCreditCard(creditCardId) {
-        return this.request(RequestMethod.delete, `fundinginstruments/${creditCardId}`);
+        return this.request(RequestMethod.delete, `/fundinginstruments/${creditCardId}`);
     }
 }
 Moip.JS = {
